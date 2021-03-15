@@ -1,0 +1,13 @@
+Read about ASCII. Write Unicode for all characters in a word "Hello".
+
+H = Dec 72, Hx 48, Oct 110
+
+E = Dec 69, Hx 45, Oct 105
+
+L = Dec 76, Hx 4C, Oct 114
+
+O = Dec 79, Hx 4F, Oct 117
+
+
+What the difference between integers and floating-point numbers?
+Floating-point numbers have a decimal point. It have one number after decimal point. Floats are used when more precision is needed.
