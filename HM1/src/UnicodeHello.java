@@ -5,5 +5,6 @@ public class UnicodeHello {
         char l = 76;
         char o = 79;
         System.out.println(h + "" + e + "" + l + "" + l + "" + o);
+        System.out.println("Result is: " + h + e + l + l + o);
     }
 }
