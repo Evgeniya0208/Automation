@@ -16,7 +16,7 @@ public class ArraysExample{
         }
         System.out.println(Arrays.toString(myDoubleArray));
         double firstElement = myDoubleArray[0];
-        double lastElement = myDoubleArray[4];
+        double lastElement = myDoubleArray[myDoubleArray.length - 1];
         System.out.println(firstElement);
         System.out.println(lastElement);
     }
