@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ArraysExample{
+public class  ArraysExample{
     public static void main(String[] args){
         int[] myIntegerArray = new int [10];
         double[] myDoubleArray = new double [5];

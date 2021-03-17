@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class ArrayElementsSum {
     public static void main(String[] args) {
-        int [] arrayForSum = new int[10];
+        int[] arrayForSum = new int[10];
         for (int i = 0; i < 10; i++) {
             Random random = new Random();
             int randomInt = random.nextInt(75);
