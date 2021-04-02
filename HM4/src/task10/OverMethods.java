@@ -1,4 +1,4 @@
-//task 10
+package task10;//task 10
 
 public class OverMethods {
     public static int addingVars (int a, int b) {

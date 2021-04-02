@@ -1,4 +1,4 @@
-//task 3
+package task3;//task 3
 
 public class CatBreed {
 

@@ -1,3 +1,5 @@
+package task7;
+
 //task 7
 public class Book {
     private int id = 0;

@@ -1,3 +1,5 @@
+package task6;
+
 //task 6
 public class UsingThis {
     public String companyName;

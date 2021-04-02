@@ -1,4 +1,4 @@
-//task 5
+package task5;//task 5
 
 public class Apartment {
     public String metroStation;

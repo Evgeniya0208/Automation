@@ -1,4 +1,4 @@
-//task 8
+package task8;//task 8
 
 public class Truck extends Car {
 
@@ -10,8 +10,8 @@ public class Truck extends Car {
 
     public Truck(int yearOfManufacture, String model, int maxSpeed) { //(6) after all - constructor of object, that is created.
         // child class constructor is initialized after parent class constructor
-        System.out.println("Hi from Truck constructor");
-        System.out.println("CarCounter from Truck " + truckCount);
+        System.out.println("Hi from task8.Truck constructor");
+        System.out.println("CarCounter from task8.Truck " + truckCount);
         this.yearOfManufacture = yearOfManufacture;
         this.model = model;
         this.maxSpeed = maxSpeed;

@@ -1,4 +1,4 @@
-//task 9
+package task9;//task 9
 
 public class RecExample {
     public static void main(String[] args) {
