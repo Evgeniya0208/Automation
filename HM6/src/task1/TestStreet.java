@@ -5,7 +5,7 @@ public class TestStreet {
         Street street = new Street("Raduzhnaya", new District(), new City(), 84, 20);
         street.city.setName("Kiev");
         street.district.setName("Dneprovskiy");
-        System.out.println(street.city.name);
-        System.out.println(street.district.name);
+        System.out.println(street.city.getName());
+        System.out.println(street.district.getName());
     }
 }

@@ -1,7 +1,7 @@
 package task1;
 
 public class District {
-    String name;
+    private String name;
 
     public String getName() {
         return name;
