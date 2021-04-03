@@ -22,20 +22,23 @@ public class Car extends Vehicle {
         if(getCurrentVelocity == 0) {
             setCurrentGear("N");
         }
-        if (getCurrentVelocity <= 40) {
+        else if (getCurrentVelocity <= 40) {
             setCurrentGear("1");
         }
-        if (getCurrentVelocity > 40 & getCurrentVelocity <= 60) {
+        else if (getCurrentVelocity > 40 & getCurrentVelocity <= 60) {
             setCurrentGear("2");
         }
-        if (getCurrentVelocity > 60 & getCurrentVelocity <= 80) {
+        else if (getCurrentVelocity > 60 & getCurrentVelocity <= 80) {
             setCurrentGear("3");
         }
-        if (getCurrentVelocity > 80 & getCurrentVelocity <= 100) {
+        else if (getCurrentVelocity > 80 & getCurrentVelocity <= 100) {
             setCurrentGear("4");
         }
-        if (getCurrentVelocity > 100 & getCurrentVelocity <= maxSpeed) {
+        else if (getCurrentVelocity > 100 & getCurrentVelocity <= maxSpeed) {
             setCurrentGear("5");
+        }
+        else {
+            System.out.println("Wrong Velocity");
         }
     }
 
@@ -43,10 +46,10 @@ public class Car extends Vehicle {
         if(getCurrentDirection == 0) {
             System.out.println("Car is going straight");
         }
-        if (getCurrentDirection < 0 & getCurrentDirection >= -90) {
+        else if (getCurrentDirection < 0 & getCurrentDirection >= -90) {
             System.out.println("Car turns left");
         }
-        if (getCurrentDirection > 0 & getCurrentDirection <= 90) {
+        else if (getCurrentDirection > 0 & getCurrentDirection <= 90) {
             System.out.println("Car turns right");
         }
     }
