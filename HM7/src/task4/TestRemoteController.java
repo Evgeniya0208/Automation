@@ -6,11 +6,6 @@ public class TestRemoteController {
         TV samsung = new TV("Samsung");
 
         remote.connectDevice(samsung);
-        System.out.println(remote.checkIfDeviceConnected());
-        remote.disconnectDevice(samsung);
-        System.out.println(remote.checkIfDeviceConnected());
-
-        remote.connectDevice(samsung);
 
         System.out.println("Is TV on? " + samsung.isOn);
         remote.powerOn();
@@ -28,9 +23,12 @@ public class TestRemoteController {
 
         System.out.println(samsung.getVolumeLevel());
 
-        //remote.mute(); //set volumeLevel = null  - get exception
+        remote.mute();
 
         remote.setChannel(10);
         remote.currentChannel();
+
+        remote.disconnectDevice(samsung);
+
     }
 }

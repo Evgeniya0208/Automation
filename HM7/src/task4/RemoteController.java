@@ -10,7 +10,7 @@ public class RemoteController implements Volume, Device {
     public void disconnectDevice(TVDevice tvDevice) {
         this.tvDevice = null;
     }
-    public boolean checkIfDeviceConnected() {
+    private boolean checkIfDeviceConnected() {
         if(this.tvDevice == null) {
             return false;
         } else {
@@ -20,37 +20,37 @@ public class RemoteController implements Volume, Device {
 
     @Override
     public void upVolume() {
-        tvDevice.upVolume();
+        if(checkIfDeviceConnected()) tvDevice.upVolume();
     }
 
     @Override
     public void downVolume() {
-        tvDevice.downVolume();
+        if(checkIfDeviceConnected()) tvDevice.downVolume();
     }
 
     @Override
     public void mute() {
-        tvDevice.mute();
+        if(checkIfDeviceConnected()) tvDevice.mute();
     }
 
     @Override
     public void powerOn() {
-        tvDevice.powerOn();
+        if(checkIfDeviceConnected()) tvDevice.powerOn();
     }
 
     @Override
     public void powerOff() {
-        tvDevice.powerOff();
+        if(checkIfDeviceConnected()) tvDevice.powerOff();
     }
 
     @Override
     public void setChannel(int channel) {
         int a = channel;
-        tvDevice.setChannel(a);
+        if(checkIfDeviceConnected()) tvDevice.setChannel(a);
     }
 
     @Override
     public void currentChannel() {
-        tvDevice.currentChannel();
+        if(checkIfDeviceConnected()) tvDevice.currentChannel();
     }
 }

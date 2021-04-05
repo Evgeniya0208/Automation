@@ -50,8 +50,7 @@ public class TV extends TVDevice {
 
     @Override
     public void mute() {
-        Integer muteVolume = null;
-        this.volumeLevel = muteVolume;
+        this.volumeLevel = 0;
     }
 }
 
